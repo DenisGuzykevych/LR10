@@ -9,9 +9,9 @@ int main()
     double vysota, mediana, AB, BC, AC, perymetr, pivperymetr;
 	int xa = 0, xb = 8, xc = -8;
 	int ya = 0, yb = 7, yc = 9;
-	AB = sqrt(((xb * xb) - (2 * xb * xa) + (xa * xa)) + ((yb * yb) - (2 * yb * ya) + (ya * ya)));
-	BC = sqrt(((xc * xc) - (2 * xc * xb) + (xb * xb)) + ((yc * yc) - (2 * yc * yb) + (yb * yb)));
-	AC = sqrt(((xc * xc) - (2 * xc * xa) + (xa * xa)) + ((yc * yc) - (2 * yc * ya) + (ya * ya)));
+	AB = sqrt(pow((xb - xa), 2) + pow((yb - ya), 2));
+	BC = sqrt(pow((xc - xb), 2) + pow((yc - yb), 2));
+	AC = sqrt(pow((xc - xa), 2) + pow((yc - ya), 2));
 	cout << "AB = " << AB << " cм" << endl;
 	cout << "BC = " << BC << " cм" << endl;
 	cout << "AC = " << AC << " cм" << endl;
