@@ -10,8 +10,8 @@ double fun(double a, double b)
 int main()
 {
     setlocale(0, ".1251");
-    double x, y, t, a, b;
-    x = 10.9;
+    double y, t, a, b;
+    double const x = 10.9;
     cout << "\n Ввести значення t: "; cin >> t;
     b = pow(log10(abs(x)), 2);
     a = pow(t, 3) + sqrt(b);
