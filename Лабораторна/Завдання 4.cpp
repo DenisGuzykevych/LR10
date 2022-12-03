@@ -3,7 +3,10 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
+double fun(double a, double b)
+{
+    return pow(sin(a + b), 3);
+}
 int main()
 {
     setlocale(0, ".1251");
@@ -12,6 +15,6 @@ int main()
     cout << "\n Ввести значення t: "; cin >> t;
     b = pow(log10(abs(x)), 2);
     a = pow(t, 3) + sqrt(b);
-    y = pow(sin(a + b), 3);
+    y = fun(a, b);
     cout << "\n y = " << y << endl;
 }
